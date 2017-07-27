@@ -5,13 +5,10 @@ export default class LocalStorage {
     this.$state = $state;
     this.phoneBook = $localStorage.phoneBook || ($localStorage.phoneBook = {
       friends: [
-        {name: 'Tal Priel', id: 1, phone: '0546552656'},
-        {name: 'Aviv Hadar', id: 3, phone: '0546552636'}
+        {name: 'Tal Priel', phone: '0546552656'},
+        {name: 'Aviv Hadar', phone: '0546552636'}
       ],
-      work: [{name: 'Fred Z', id: 2, phone: '054632133'}],
-      sluts: [
-        {name: 'lena', phone: '0546015289'}
-      ]
+      work: [{name: 'Fred Z', phone: '054632133'}]
     });
   }
 
